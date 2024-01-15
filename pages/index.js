@@ -15,9 +15,9 @@ const Home = (props) => {
         <div className="home-header">
           <header
             data-thq="thq-navbar"
-            className="navbarContainer home-navbar-interactive"
+            className="home-navbar-interactive navbarContainer"
           >
-            <span className="logo">SECURE</span>
+            <span className="logo">THREATSECURE</span>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
                 <span className="home-nav12 bodySmall">Home</span>
@@ -26,10 +26,7 @@ const Home = (props) => {
                 <span className="home-nav4 bodySmall">About</span>
                 <span className="home-nav5 bodySmall">Contact</span>
               </nav>
-              <div className="home-buttons">
-                <button className="home-login buttonFlat">Login</button>
-                <button className="buttonFilled">Register</button>
-              </div>
+              <div className="home-buttons"></div>
             </div>
             <div data-thq="thq-burger-menu" className="home-burger-menu">
               <svg viewBox="0 0 1024 1024" className="home-icon socialIcons">
@@ -88,7 +85,7 @@ const Home = (props) => {
           </header>
         </div>
         <div className="home-hero">
-          <div className="heroContainer home-hero1">
+          <div className="home-hero1 heroContainer">
             <div className="home-container01">
               <h1 className="home-hero-heading heading1">Secure Your Data</h1>
               <span className="home-hero-sub-heading bodyLarge">
@@ -247,25 +244,29 @@ const Home = (props) => {
                 <FeatureCard
                   Heading="Information Security Compliance Consultation"
                   SubHeading="Expert guidance on achieving and maintaining information security compliance"
+                  rootClassName="feature-card-root-class-name"
                 ></FeatureCard>
                 <FeatureCard
                   Heading="Vulnerability Assessment and Penetration Testing (VAPT)"
                   SubHeading="Thorough testing to identify vulnerabilities and weaknesses in your systems"
+                  rootClassName="feature-card-root-class-name2"
                 ></FeatureCard>
                 <FeatureCard
                   Heading="Red Team Exercises"
                   SubHeading="Simulated attacks to evaluate the effectiveness of your security measures"
+                  rootClassName="feature-card-root-class-name1"
                 ></FeatureCard>
                 <FeatureCard
                   Heading="Data Protection and Privacy Consultation"
                   SubHeading="Guidance on implementing data protection measures and ensuring privacy compliance"
+                  rootClassName="feature-card-root-class-name3"
                 ></FeatureCard>
               </div>
             </div>
           </div>
         </div>
         <div className="home-pricing">
-          <div className="pricingContainer">
+          <div className="home-pricing1 pricingContainer">
             <div className="home-container04">
               <span className="overline">
                 <span>Pricing</span>
@@ -436,7 +437,7 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-banner">
-          <div className="bannerContainer home-banner1">
+          <div className="home-banner1 bannerContainer">
             <h1 className="home-banner-heading heading2">
               Comprehensive Information Security Solutions
             </h1>
@@ -557,7 +558,7 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-footer">
-          <footer className="footerContainer home-footer1">
+          <footer className="home-footer1 footerContainer">
             <div className="home-container31">
               <span className="logo">SECURE</span>
               <nav className="home-nav1 bodySmall home-nav1">
@@ -616,6 +617,9 @@ const Home = (props) => {
             flex-direction: column;
             background-color: var(--dl-color-gray-white);
           }
+          .home-navbar-interactive {
+            background-color: var(--dl-color-gray-black);
+          }
           .home-desktop-menu {
             flex: 1;
             display: flex;
@@ -648,13 +652,11 @@ const Home = (props) => {
             margin-left: var(--dl-space-space-twounits);
           }
           .home-buttons {
+            border: 2px dashed rgba(120, 120, 120, 0.4);
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
-          }
-          .home-login {
-            margin-right: 32px;
           }
           .home-burger-menu {
             display: none;
@@ -750,6 +752,9 @@ const Home = (props) => {
             align-items: flex-start;
             justify-content: center;
           }
+          .home-hero1 {
+            background-color: var(--dl-color-gray-black);
+          }
           .home-container01 {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
@@ -791,6 +796,7 @@ const Home = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-fourunits);
             justify-content: flex-start;
+            background-color: #000000;
           }
           .home-container02 {
             display: flex;
@@ -818,6 +824,9 @@ const Home = (props) => {
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+          .home-pricing1 {
+            background-color: var(--dl-color-gray-black);
           }
           .home-container04 {
             gap: var(--dl-space-space-unit);
@@ -1114,6 +1123,9 @@ const Home = (props) => {
             align-items: center;
             justify-content: center;
           }
+          .home-banner1 {
+            background-color: var(--dl-color-gray-black);
+          }
           .home-banner-heading {
             text-align: center;
           }
@@ -1142,6 +1154,7 @@ const Home = (props) => {
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: row;
             padding-bottom: var(--dl-space-space-fourunits);
+            background-color: var(--dl-color-gray-black);
           }
           .home-container29 {
             display: flex;
@@ -1169,6 +1182,9 @@ const Home = (props) => {
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+          .home-footer1 {
+            background-color: var(--dl-color-gray-black);
           }
           .home-container31 {
             gap: var(--dl-space-space-unit);
