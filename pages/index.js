@@ -565,7 +565,7 @@ const Home = (props) => {
         <div className="home-footer">
           <footer className="home-footer1 footerContainer">
             <div className="home-container31">
-              <span className="logo">SECURE</span>
+              <span className="logo">THREATSECURE</span>
               <nav className="home-nav1 bodySmall home-nav1">
                 <span className="home-nav11 bodySmall">Home</span>
                 <span className="home-nav22 bodySmall">Services</span>
@@ -577,7 +577,7 @@ const Home = (props) => {
             <div className="home-separator"></div>
             <div className="home-container32">
               <span className="bodySmall home-text89">
-                © 2023 myCompany, All Rights Reserved.
+                © 2024 ThreatSecure Consulting     All Rights Reserved.
               </span>
               <div className="home-icon-group1">
                 <svg
