@@ -86,6 +86,11 @@ const Home = (props) => {
         </div>
         <div className="home-hero">
           <div className="home-hero1 heroContainer">
+            <img
+              src="/external/6-400w.png"
+              alt="image"
+              className="home-image"
+            />
             <div className="home-container01">
               <h1 className="home-hero-heading heading1">Secure Your Data</h1>
               <span className="home-hero-sub-heading bodyLarge">
@@ -754,6 +759,11 @@ const Home = (props) => {
           }
           .home-hero1 {
             background-color: var(--dl-color-gray-black);
+          }
+          .home-image {
+            width: 392px;
+            height: 243px;
+            object-fit: cover;
           }
           .home-container01 {
             gap: var(--dl-space-space-oneandhalfunits);
